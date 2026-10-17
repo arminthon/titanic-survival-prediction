@@ -31,6 +31,38 @@ Experience the interactive app deployed live on Streamlit Cloud:
 ### 🚀 Local Setup & Run
 1. Clone the repository:
 ```bash
-   git clone https://github.com/arminthon/titanic-survival-prediction.git
-   cd titanic-survival-prediction
-   
+git clone https://github.com/arminthon/titanic-survival-prediction.git
+cd titanic-survival-prediction
+
+---
+
+<a name="persian"></a>
+<div dir="rtl">
+
+## 🇮🇷 فارسی
+
+یک پروژه یادگیری ماشین از ابتدا تا استقرار نهایی بر روی دیتاست معروف تایتانیک. این برنامه درصد احتمال نجات مسافران را با استفاده از الگوریتم آنسامبل **Random Forest Classifier** تخمین می‌زند و نتیجه را در یک داشبورد تعاملی **Streamlit** نمایش می‌دهد.
+
+### 🌐 مشاهده آنلاین (دموی لایو)
+برنامه را به صورت زنده در استریم‌لیت کلاود تست کنید:  
+👉 **[titanic-survival-armin.streamlit.app](https://titanic-survival-armin.streamlit.app/)**
+
+### 📌 ویژگی‌های پروژه
+- **تحلیل داده‌ها (EDA):** بررسی ویژگی‌های اثرگذار مسافران از جمله طبقه بلیط، سن، جنسیت، کرایه و همراهان خانوادگی.
+- **پیش‌پردازش داده‌ها:** مدیریت داده‌های ناموجود سن با مقدار میانگین، حذف ویژگی‌های پر از داده از‌دست‌رفته و کدگذاری متغیرهای دسته‌ای.
+- **مدل‌سازی یادگیری ماشین:**
+  - آموزش مدل اولیه با درخت تصمیم و ارتقا به مدل ترکیبی **Random Forest Classifier** جهت جلوگیری از اورفیتینگ و ایجاد احتمالات نرم و واقع‌گرایانه.
+  - ذخیره‌سازی مدل با استفاده از کتابخانه `joblib`.
+- **رابط کاربری تعاملی:** توسعه وب‌اپلیکیشن کاربرپسند با استفاده از Streamlit جهت تغییر آسان پارامترها و مشاهده بلادرنگ نتیجه پیش‌بینی.
+
+### 🛠️ ابزارها و تکنولوژی‌ها
+- **زبان:** پایتون (Python 3)
+- **پردازش داده:** `pandas` و `numpy`
+- **یادگیری ماشین:** `scikit-learn` و `joblib`
+- **رابط کاربری و استقرار:** `streamlit`
+
+### 🚀 راه‌اندازی و اجرای محلی
+۱. کلون کردن ریپازیتوری:
+```bash
+git clone https://github.com/arminthon/titanic-survival-prediction.git
+cd titanic-survival-prediction
