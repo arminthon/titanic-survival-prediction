@@ -1,23 +1,36 @@
-# 🚢 Titanic Survival Prediction with Decision Tree
+# 🚢 Titanic Survival Prediction & Interactive Web App
 
-A machine learning project predicting passenger survival on the Titanic dataset, focusing on exploratory data analysis, data cleaning, and handling **overfitting**.
+[English](#english) | [فارسی](#persian)
 
-## 📌 Project Overview
-- **Data Preprocessing & Cleaning:** Handled missing values in `Age` and `Embarked`, dropped high-missing column `Cabin`.
-- **Feature Engineering:** Encoded categorical features (`Sex`) into numeric format for modeling.
-- **Exploratory Data Analysis (EDA):** Visualized survival distributions across passenger classes (`Pclass`) and genders.
-- **Modeling:** Built and evaluated a `DecisionTreeClassifier` using Scikit-Learn.
-- **Overfitting Prevention:** Tuned `max_depth` to prevent the decision tree from memorizing the training data.
+---
 
-## 📊 Results & Key Takeaways
-- **Default Tree (Unconstrained):**
-  - Train Accuracy: ~**98.6%** (High Overfitting)
-  - Test Accuracy: ~**76.9%**
-- **Pruned Tree (`max_depth=3`):**
-  - Train Accuracy: **82.2%**
-  - Test Accuracy: **82.0%**
-  - Result: Eliminates overfitting, achieving balanced and robust generalization on unseen test data.
+<a name="english"></a>
+## 🇬🇧 English
 
-## 🛠️ Tech Stack
-- **Language:** Python
-- **Libraries:** Pandas, NumPy, Matplotlib, Scikit-Learn
+An end-to-end Machine Learning project using the classic Titanic dataset. The application predicts a passenger's survival probability using an ensemble **Random Forest Classifier** model served through an interactive **Streamlit** dashboard.
+
+### 🌐 Live Demo
+Experience the interactive app deployed live on Streamlit Cloud:  
+👉 **[titanic-survival-armin.streamlit.app](https://titanic-survival-armin.streamlit.app/)**
+
+### 📌 Features
+- **Exploratory Data Analysis (EDA):** Analyzed key passenger attributes (passenger class, age, gender, ticket fare, and family relationships).
+- **Data Preprocessing & Cleaning:** Handled missing age values with mean imputation, dropped redundant cabin records, and encoded categorical features.
+- **Machine Learning Modeling:**
+  - Evaluated baseline models vs. ensemble learning.
+  - Upgraded from a simple Decision Tree to a **Random Forest Classifier** (`n_estimators=100`, `max_depth=5`) to improve generalization and deliver realistic survival probabilities.
+  - Model serialized via `joblib`.
+- **Interactive UI:** Built with Streamlit, enabling intuitive input tuning (sliders, select boxes) and real-time survival probability visualization.
+
+### 🛠️ Tech Stack
+- **Python 3**
+- **Data Manipulation:** `pandas`, `numpy`
+- **Machine Learning:** `scikit-learn`, `joblib`
+- **Deployment & UI:** `streamlit`
+
+### 🚀 Local Setup & Run
+1. Clone the repository:
+```bash
+   git clone https://github.com/arminthon/titanic-survival-prediction.git
+   cd titanic-survival-prediction
+   
